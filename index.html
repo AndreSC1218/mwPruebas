@@ -8,12 +8,13 @@
     <title>MW Consulting</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--Animate css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <!--Custom css-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
     <!--NAVEGACION-->
     <nav class="navbar navbar-dark navbar-custom navbar-expand-lg sticky-top">
         <div class="container-fluid">
@@ -27,45 +28,185 @@
                 <a style="color: #eec68b;"  class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="#empresa">Empresa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicio</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!--CARRUCEL-->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+        <div class="carousel-indicators">
+          <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
+        </div>
         <div class="carousel-inner">
+          <!--VIDEO BACKGROUND-->
+          <video autoplay="autoplay" loop="loop"><source src="img/WhatsApp Video 2022-09-09 at 19.36.40.mp4" type="video/mp4"></video>
           <div class="carousel-item active">
-            <img src="img/carrusel/pexels-fauxels-3184465.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 class="animated fadeInDown" style="animation-delay: 1s"> <span style="color:#eec68b;">MW</span> Consulting</h5>
+              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+              <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Contactar</a></p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img/carrusel/pexels-karolina-grabowska-4210551.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 class="animated fadeInDown" style="animation-delay: 1s">Autorizaciones sanitarias</h5>
+              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+              <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Contactar</a></p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img/carrusel/pexels-karolina-grabowska-4210611.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 class="animated fadeInDown" style="animation-delay: 1s">Aseguramiento de calidad</h5>
+              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+              <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Contactar</a></p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
       </div>
+      <!--EMPRESA-->
+      <section id="empresa" class="mt-4">
+        <div class="container">
+          <h2 class="text-center">EMPRESA</h2>
+          <hr/>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img class="rounded" style="width:100%;" src="img/pexels-fauxels-3184292.jpg" alt="">
+                </div>
+                <div class="col-md-6 my-auto mt-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perspiciatis repudiandae neque eligendi illum, cum, ducimus expedita officiis consectetur, nam praesentium quia accusantium laborum porro blanditiis natus excepturi perferendis unde.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perspiciatis repudiandae neque eligendi illum, cum, ducimus expedita officiis consectetur, nam praesentium quia accusantium laborum porro blanditiis natus excepturi perferendis unde.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--SERVICIOS-->
+      <section id="servicios" class="mt-4">
+        <div class="container">
+            <h2 class="text-center">SERVICIOS</h2>
+            <hr class="mt-2 mb-2"/>
+            <div class="row mt-4">
+                <div class="col text-center">
+                  <div id="servicio1" class="card">
+                    <img src="img/carrusel/pexels-fauxels-3184465.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Servicio1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">saber mas</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col text-center">
+                    <div id="servicio2" class="card">
+                      <img src="img/carrusel/pexels-karolina-grabowska-4210551.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Servicio2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">saber mas</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col text-center">
+                    <div id="servicio3" class="card">
+                      <img src="img/carrusel/pexels-karolina-grabowska-4210611.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Servicio3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">saber mas</a>
+                      </div>
+                    </div>
+                  </div>              
+            </div>
+        </div>
+      </section>
+      <!--CONTACTO-->
+      <!--Section: Contact v.2-->
+<section id="contacto" class="">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Tienes alguna duda?, puedes enviarnos un correo rellenando el siguiente formulario</p>
+  <div class="row">
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">tu nombre</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">tu email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+              </div>
+              <!--Grid row-->
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Asunto</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">tu mensaje</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+          </form>
+          <div class="text-center text-md-left">
+              <a id="btn_enviar" class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+51 999 240 710</p>
+              </li>
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>nomeacuerdo@nose.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+  </div>
+</section>
+<!--Section: Contact v.2-->
 
 
 <!--Bootstrap-->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
-
 </html>
